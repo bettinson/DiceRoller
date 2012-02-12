@@ -20,6 +20,7 @@
 		BB0D9A0714E6D72800027E76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0D99E814E6D72700027E76 /* Foundation.framework */; };
 		BB0D9A0F14E6D72800027E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0D9A0D14E6D72800027E76 /* InfoPlist.strings */; };
 		BB0D9A1214E6D72800027E76 /* DiceRollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D9A1114E6D72800027E76 /* DiceRollerTests.m */; };
+		BB93FA1214E73EB9004EB780 /* Dice.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93FA1114E73EB9004EB780 /* Dice.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +38,22 @@
 		BB0D99E614E6D72700027E76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BB0D99E814E6D72700027E76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BB0D99EA14E6D72700027E76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BB0D99EE14E6D72700027E76 /* DiceRoller-Info.plist */ = {isa = PBXFileReference; path = "DiceRoller-Info.plist"; sourceTree = "<group>"; };
+		BB0D99EE14E6D72700027E76 /* DiceRoller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiceRoller-Info.plist"; sourceTree = "<group>"; };
 		BB0D99F014E6D72800027E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB0D99F214E6D72800027E76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BB0D99F414E6D72800027E76 /* DiceRoller-Prefix.pch */ = {isa = PBXFileReference; path = "DiceRoller-Prefix.pch"; sourceTree = "<group>"; };
-		BB0D99F514E6D72800027E76 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB0D99F414E6D72800027E76 /* DiceRoller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiceRoller-Prefix.pch"; sourceTree = "<group>"; };
+		BB0D99F514E6D72800027E76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB0D99F614E6D72800027E76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB0D99F914E6D72800027E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BB0D99FB14E6D72800027E76 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		BB0D99FB14E6D72800027E76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB0D99FC14E6D72800027E76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB0D9A0314E6D72800027E76 /* DiceRollerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceRollerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0D9A0414E6D72800027E76 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		BB0D9A0C14E6D72800027E76 /* DiceRollerTests-Info.plist */ = {isa = PBXFileReference; path = "DiceRollerTests-Info.plist"; sourceTree = "<group>"; };
+		BB0D9A0C14E6D72800027E76 /* DiceRollerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiceRollerTests-Info.plist"; sourceTree = "<group>"; };
 		BB0D9A0E14E6D72800027E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BB0D9A1014E6D72800027E76 /* DiceRollerTests.h */ = {isa = PBXFileReference; path = DiceRollerTests.h; sourceTree = "<group>"; };
+		BB0D9A1014E6D72800027E76 /* DiceRollerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceRollerTests.h; sourceTree = "<group>"; };
 		BB0D9A1114E6D72800027E76 /* DiceRollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceRollerTests.m; sourceTree = "<group>"; };
+		BB93FA1114E73EB9004EB780 /* Dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +83,14 @@
 		BB0D99D714E6D72600027E76 = {
 			isa = PBXGroup;
 			children = (
+				BB93FA1114E73EB9004EB780 /* Dice.png */,
 				BB0D99EC14E6D72700027E76 /* DiceRoller */,
 				BB0D9A0A14E6D72800027E76 /* DiceRollerTests */,
 				BB0D99E514E6D72700027E76 /* Frameworks */,
 				BB0D99E314E6D72700027E76 /* Products */,
 			);
 			sourceTree = "<group>";
+			tabWidth = 8;
 		};
 		BB0D99E314E6D72700027E76 /* Products */ = {
 			isa = PBXGroup;
@@ -223,6 +227,7 @@
 			files = (
 				BB0D99F114E6D72800027E76 /* InfoPlist.strings in Resources */,
 				BB0D99FA14E6D72800027E76 /* MainStoryboard.storyboard in Resources */,
+				BB93FA1214E73EB9004EB780 /* Dice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +362,12 @@
 		BB0D9A1614E6D72800027E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiceRoller/DiceRoller-Prefix.pch";
 				INFOPLIST_FILE = "DiceRoller/DiceRoller-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -368,10 +375,12 @@
 		BB0D9A1714E6D72800027E76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiceRoller/DiceRoller-Prefix.pch";
 				INFOPLIST_FILE = "DiceRoller/DiceRoller-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -429,6 +438,7 @@
 				BB0D9A1714E6D72800027E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB0D9A1814E6D72800027E76 /* Build configuration list for PBXNativeTarget "DiceRollerTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +447,7 @@
 				BB0D9A1A14E6D72800027E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+   IBOutlet UILabel *segmentLabel;
+   IBOutlet UITextField *modifier;
 
+}
+
+@property (weak, nonatomic) IBOutlet UIButton *numberState;
+@property (strong, nonatomic) IBOutlet UITextField *modifier;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *diList;
+@property (strong, nonatomic) IBOutlet UILabel *segmentLabel;
+-(IBAction)changeModifier:(id)sender;
+
+- (int)addInteger:(NSString *)modInt_ withInteger:(NSString*)title_ andInteger:(NSNumber *)dice_;
+    
 @end
