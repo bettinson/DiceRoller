@@ -11,14 +11,18 @@
 @interface ViewController : UIViewController{
    IBOutlet UILabel *segmentLabel;
    IBOutlet UITextField *modifier;
-
+   NSInteger diceNo;
 }
+@property (weak, nonatomic) IBOutlet UISegmentedControl *diceNumber;
 
 @property (weak, nonatomic) IBOutlet UIButton *numberState;
 @property (strong, nonatomic) IBOutlet UITextField *modifier;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *diList;
 @property (strong, nonatomic) IBOutlet UILabel *segmentLabel;
+
 -(IBAction)changeModifier:(id)sender;
+
+-(int)diceNumberCounter:(NSInteger)number;
 
 - (int)addInteger:(NSString *)modInt_ withInteger:(NSString*)title_ andInteger:(NSNumber *)dice_;
     

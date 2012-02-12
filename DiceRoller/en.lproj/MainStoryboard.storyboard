@@ -33,29 +33,29 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="rTL-tA-wjK">
-                                <rect key="frame" x="23" y="130" width="275" height="21"/>
+                                <rect key="frame" x="23" y="187" width="275" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z5Y-CR-ICM">
-                                <rect key="frame" x="84" y="159" width="153" height="56"/>
+                                <rect key="frame" x="147" y="123" width="153" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Roll selected">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" red="0.19292115882651187" green="0.33191629085380114" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="segmentedControlChanged:" destination="2" eventType="touchUpInside" id="9t4-KX-8UK"/>
+                                    <action selector="segmentedControlChanged:" destination="2" eventType="touchUpInside" id="X8N-5L-93l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lgE-K5-80O">
-                                <rect key="frame" x="50" y="17" width="36" height="37"/>
+                                <rect key="frame" x="91" y="16" width="36" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="+">
@@ -70,32 +70,29 @@
                                     <action selector="segmentedControlChanged:" destination="2" eventType="touchUpInside" id="leN-89-z2o"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="XKJ-Xs-S5f">
+                                <rect key="frame" x="20" y="136" width="119" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.45791361975061351" green="0.72833717964779487" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="diList" destination="cnH-Th-33o" id="orL-MQ-9dY"/>
+                        <outlet property="diceNumber" destination="XKJ-Xs-S5f" id="bCy-aA-SGU"/>
                         <outlet property="modifier" destination="WVy-Aq-2KP" id="GHM-tg-gR2"/>
                         <outlet property="numberState" destination="lgE-K5-80O" id="R9a-Qm-yy9"/>
                         <outlet property="segmentLabel" destination="rTL-tA-wjK" id="cjp-Zs-yh7"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-239" y="88"/>
+            <point key="canvasLocation" x="-145" y="43"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changeModifier:"/>
-                <relationship kind="outlet" name="diList" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="modifier" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="numberState" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="segmentLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

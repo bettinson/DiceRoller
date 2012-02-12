@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize diceNumber;
 @synthesize numberState;
 @synthesize modifier;
 @synthesize diList;
@@ -55,7 +56,11 @@
     NSNumber *d10 = [NSNumber numberWithInt:(arc4random() % 10) + 1];
     NSNumber *d12 = [NSNumber numberWithInt:(arc4random() % 12) + 1];
     NSNumber *d20 = [NSNumber numberWithInt:(arc4random() % 20) + 1];
+    
     // Checks what the UISegment index is and then returns the value of the roll to the label.
+    NSInteger segment = [self diceNumberCounter :[diceNumber selectedSegmentIndex]];
+    diceNo = segment;
+    if (diceNo == 0){
     if (modString > 0){
         switch (self.diList.selectedSegmentIndex) {
             case 0:
@@ -73,15 +78,28 @@
                 self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d20]];                break;
             default:
                 break;
+        }        
         }
+    } else{
+        NSLog(@"This is working");
     }
-}
+    }
 //Function for adding the integer
 - (int)addInteger:(NSString *)modInt_ withInteger:(NSString*)title_ andInteger:(NSNumber *)dice_{
+    
     if ([title_ isEqualToString:@"+"])
         return modInt_.intValue + dice_.intValue;
     else
         return dice_.intValue - modInt_.intValue;
+}
+
+-(int)diceNumberCounter:(NSInteger)number{
+    if (number == 0){
+        diceNo = 0;
+    } else if (number == 1){
+        diceNo = 1;
+    }
+    return diceNo;
 }
 
 - (void)viewDidUnload
@@ -93,6 +111,10 @@
     modifier = nil;
     [self setSegmentLabel:nil];
     [self setNumberState:nil];
+    diceNumber = nil;
+    [self setDiceNumber:nil];
+    [self setDiceNumber:nil];
+    [self setDiceNumber:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
