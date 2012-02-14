@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize diceTwo;
+@synthesize diceOne;
 @synthesize diceNumber;
 @synthesize numberState;
 @synthesize modifier;
@@ -30,6 +32,8 @@
 - (void)viewDidLoad
 {
     self.segmentLabel.text = nil;
+    self.diceOne.text = nil;
+    self.diceTwo.text = nil;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -46,7 +50,7 @@
         [(UIButton *)sender setTitle:@"+" forState:UIControlStateNormal];
 }
 
-- (IBAction)segmentedControlChanged:(id)sender{  
+- (IBAction)rollButton:(id)sender{  
     NSString *title = [numberState currentTitle];
     
     NSString *modString = self.modifier.text; 
@@ -81,6 +85,7 @@
         }        
         }
     } else{
+        self.segmentLabel.text = nil;
         NSLog(@"This is working");
     }
     }
@@ -115,6 +120,8 @@
     [self setDiceNumber:nil];
     [self setDiceNumber:nil];
     [self setDiceNumber:nil];
+    [self setDiceOne:nil];
+    [self setDiceTwo:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
