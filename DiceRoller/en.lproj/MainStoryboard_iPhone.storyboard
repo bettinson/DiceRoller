@@ -27,7 +27,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Modifier" textAlignment="center" minimumFontSize="17" id="WVy-Aq-2KP">
-                                <rect key="frame" x="135" y="20" width="136" height="31"/>
+                                <rect key="frame" x="126" y="19" width="136" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lgE-K5-80O">
-                                <rect key="frame" x="91" y="16" width="36" height="37"/>
+                                <rect key="frame" x="69" y="16" width="36" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="+">
@@ -68,7 +68,6 @@
                                 </state>
                                 <connections>
                                     <action selector="changeModifier:" destination="2" eventType="touchUpInside" id="Sjf-NV-AW6"/>
-                                    <action selector="segmentedControlChanged:" destination="2" eventType="touchUpInside" id="leN-89-z2o"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="XKJ-Xs-S5f">

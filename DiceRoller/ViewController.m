@@ -62,7 +62,7 @@
     NSNumber *d20 = [NSNumber numberWithInt:(arc4random() % 20) + 1];
     
     // Checks what the UISegment index is and then returns the value of the roll to the label.
-    NSInteger segment = [self diceNumberCounter :[diceNumber selectedSegmentIndex]];
+    NSInteger segment = [diceNumber selectedSegmentIndex];
     diceNo = segment;
     if (diceNo == 0){
     if (modString > 0){
