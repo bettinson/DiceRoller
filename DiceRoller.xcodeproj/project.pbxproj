@@ -13,7 +13,7 @@
 		BB0D99F114E6D72800027E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0D99EF14E6D72800027E76 /* InfoPlist.strings */; };
 		BB0D99F314E6D72800027E76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D99F214E6D72800027E76 /* main.m */; };
 		BB0D99F714E6D72800027E76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D99F614E6D72800027E76 /* AppDelegate.m */; };
-		BB0D99FA14E6D72800027E76 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0D99F814E6D72800027E76 /* MainStoryboard.storyboard */; };
+		BB0D99FA14E6D72800027E76 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0D99F814E6D72800027E76 /* MainStoryboard_iPhone.storyboard */; };
 		BB0D99FD14E6D72800027E76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D99FC14E6D72800027E76 /* ViewController.m */; };
 		BB0D9A0514E6D72800027E76 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0D9A0414E6D72800027E76 /* SenTestingKit.framework */; };
 		BB0D9A0614E6D72800027E76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0D99E614E6D72700027E76 /* UIKit.framework */; };
@@ -21,6 +21,7 @@
 		BB0D9A0F14E6D72800027E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0D9A0D14E6D72800027E76 /* InfoPlist.strings */; };
 		BB0D9A1214E6D72800027E76 /* DiceRollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D9A1114E6D72800027E76 /* DiceRollerTests.m */; };
 		BB93FA1214E73EB9004EB780 /* Dice.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93FA1114E73EB9004EB780 /* Dice.png */; };
+		D80F712214E9F0A400E8A67B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80F712014E9F0A400E8A67B /* MainStoryboard_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 		BB0D99F414E6D72800027E76 /* DiceRoller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiceRoller-Prefix.pch"; sourceTree = "<group>"; };
 		BB0D99F514E6D72800027E76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB0D99F614E6D72800027E76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB0D99F914E6D72800027E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BB0D99F914E6D72800027E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		BB0D99FB14E6D72800027E76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BB0D99FC14E6D72800027E76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB0D9A0314E6D72800027E76 /* DiceRollerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceRollerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +55,7 @@
 		BB0D9A1014E6D72800027E76 /* DiceRollerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceRollerTests.h; sourceTree = "<group>"; };
 		BB0D9A1114E6D72800027E76 /* DiceRollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceRollerTests.m; sourceTree = "<group>"; };
 		BB93FA1114E73EB9004EB780 /* Dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice.png; sourceTree = "<group>"; };
+		D80F712114E9F0A400E8A67B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,8 @@
 			children = (
 				BB0D99F514E6D72800027E76 /* AppDelegate.h */,
 				BB0D99F614E6D72800027E76 /* AppDelegate.m */,
-				BB0D99F814E6D72800027E76 /* MainStoryboard.storyboard */,
+				BB0D99F814E6D72800027E76 /* MainStoryboard_iPhone.storyboard */,
+				D80F712014E9F0A400E8A67B /* MainStoryboard_iPad.storyboard */,
 				BB0D99FB14E6D72800027E76 /* ViewController.h */,
 				BB0D99FC14E6D72800027E76 /* ViewController.m */,
 				BB0D99ED14E6D72700027E76 /* Supporting Files */,
@@ -226,8 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB0D99F114E6D72800027E76 /* InfoPlist.strings in Resources */,
-				BB0D99FA14E6D72800027E76 /* MainStoryboard.storyboard in Resources */,
+				BB0D99FA14E6D72800027E76 /* MainStoryboard_iPhone.storyboard in Resources */,
 				BB93FA1214E73EB9004EB780 /* Dice.png in Resources */,
+				D80F712214E9F0A400E8A67B /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +299,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		BB0D99F814E6D72800027E76 /* MainStoryboard.storyboard */ = {
+		BB0D99F814E6D72800027E76 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BB0D99F914E6D72800027E76 /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		BB0D9A0D14E6D72800027E76 /* InfoPlist.strings */ = {
@@ -309,6 +313,14 @@
 				BB0D9A0E14E6D72800027E76 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D80F712014E9F0A400E8A67B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D80F712114E9F0A400E8A67B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -366,8 +378,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiceRoller/DiceRoller-Prefix.pch";
 				INFOPLIST_FILE = "DiceRoller/DiceRoller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,8 +393,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiceRoller/DiceRoller-Prefix.pch";
 				INFOPLIST_FILE = "DiceRoller/DiceRoller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
