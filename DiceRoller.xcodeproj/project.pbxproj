@@ -21,11 +21,7 @@
 		BB0D9A0F14E6D72800027E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0D9A0D14E6D72800027E76 /* InfoPlist.strings */; };
 		BB0D9A1214E6D72800027E76 /* DiceRollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D9A1114E6D72800027E76 /* DiceRollerTests.m */; };
 		BB93FA1214E73EB9004EB780 /* Dice.png in Resources */ = {isa = PBXBuildFile; fileRef = BB93FA1114E73EB9004EB780 /* Dice.png */; };
-<<<<<<< HEAD
 		D80F712214E9F0A400E8A67B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80F712014E9F0A400E8A67B /* MainStoryboard_iPad.storyboard */; };
-=======
-		BBD62AEB14E84BC4008C0A05 /* Button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BBD62AEA14E84BC4008C0A05 /* Button.jpg */; };
->>>>>>> Added two labels that can be toggled. Support for multiple dice
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +55,7 @@
 		BB0D9A1014E6D72800027E76 /* DiceRollerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceRollerTests.h; sourceTree = "<group>"; };
 		BB0D9A1114E6D72800027E76 /* DiceRollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceRollerTests.m; sourceTree = "<group>"; };
 		BB93FA1114E73EB9004EB780 /* Dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice.png; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		D80F712114E9F0A400E8A67B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-=======
-		BBD62AEA14E84BC4008C0A05 /* Button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Button.jpg; path = ../../../Desktop/Button.jpg; sourceTree = "<group>"; };
->>>>>>> Added two labels that can be toggled. Support for multiple dice
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +85,6 @@
 		BB0D99D714E6D72600027E76 = {
 			isa = PBXGroup;
 			children = (
-				BBD62AEA14E84BC4008C0A05 /* Button.jpg */,
 				BB93FA1114E73EB9004EB780 /* Dice.png */,
 				BB0D99EC14E6D72700027E76 /* DiceRoller */,
 				BB0D9A0A14E6D72800027E76 /* DiceRollerTests */,
@@ -240,11 +231,7 @@
 				BB0D99F114E6D72800027E76 /* InfoPlist.strings in Resources */,
 				BB0D99FA14E6D72800027E76 /* MainStoryboard_iPhone.storyboard in Resources */,
 				BB93FA1214E73EB9004EB780 /* Dice.png in Resources */,
-<<<<<<< HEAD
 				D80F712214E9F0A400E8A67B /* MainStoryboard_iPad.storyboard in Resources */,
-=======
-				BBD62AEB14E84BC4008C0A05 /* Button.jpg in Resources */,
->>>>>>> Added two labels that can be toggled. Support for multiple dice
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

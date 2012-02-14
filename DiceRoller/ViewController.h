@@ -13,10 +13,7 @@
    IBOutlet UITextField *modifier;
    NSInteger diceNo;
 }
-@property (weak, nonatomic) IBOutlet UIButton *rollButton;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *diceNumber;
-@property (weak, nonatomic) IBOutlet UILabel *diceOne;
-@property (weak, nonatomic) IBOutlet UILabel *diceTwo;
 
 @property (weak, nonatomic) IBOutlet UIButton *numberState;
 @property (strong, nonatomic) IBOutlet UITextField *modifier;
@@ -24,7 +21,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *segmentLabel;
 
 -(IBAction)changeModifier:(id)sender;
--(IBAction)rollButton:(id)sender;
+
 -(int)diceNumberCounter:(NSInteger)number;
 
 - (int)addInteger:(NSString *)modInt_ withInteger:(NSString*)title_ andInteger:(NSNumber *)dice_;

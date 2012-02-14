@@ -7,23 +7,17 @@
 //
 
 #import "ViewController.h"
-#import <QuartzCore/QuartzCore.h>
 
 @implementation ViewController
-@synthesize rollButton;
 @synthesize diceNumber;
-@synthesize diceOne;
-@synthesize diceTwo;
 @synthesize numberState;
 @synthesize modifier;
 @synthesize diList;
 @synthesize segmentLabel;
 
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -36,11 +30,6 @@
 - (void)viewDidLoad
 {
     self.segmentLabel.text = nil;
-    self.diceOne.text = nil;
-    self.diceTwo.text = nil;
-
-    UIImage *rollButtonImage = [UIImage imageNamed:@"Button.jpg"];
-    [rollButton setBackgroundImage:rollButtonImage forState:UIControlStateNormal];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -57,7 +46,7 @@
         [(UIButton *)sender setTitle:@"+" forState:UIControlStateNormal];
 }
 
-- (IBAction)rollButton:(id)sender{  
+- (IBAction)segmentedControlChanged:(id)sender{  
     NSString *title = [numberState currentTitle];
     
     NSString *modString = self.modifier.text; 
@@ -73,35 +62,25 @@
     diceNo = segment;
     if (diceNo == 0){
     if (modString > 0){
-        self.diceOne.text = nil;
-        self.diceTwo.text = nil;
         switch (self.diList.selectedSegmentIndex) {
             case 0:
                 self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d4]];
                     break;
             case 1:
-                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d6]];                
-                break;
+                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d6]];                break;
             case 2:
-                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d8]];                
-                break;
+                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d8]];                break;
             case 3:
-                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d10]];                
-                break;
+                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d10]];                break;
             case 4:
-                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d12]];                
-                break;
+                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d12]];                break;
             case 5:
-                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d20]];                
-                break;
+                self.segmentLabel.text = [NSString stringWithFormat:@"Roll: %i", [self addInteger:modString withInteger:title andInteger:d20]];                break;
             default:
                 break;
         }        
         }
     } else{
-        self.segmentLabel.text = nil;
-        self.diceOne.text = @"DiceOne";
-        self.diceTwo.text = @"DiceTwo";
         NSLog(@"This is working");
     }
     }
@@ -123,27 +102,19 @@
     return diceNo;
 }
 
--(void)getRolledValue:(NSInteger)value{
-    
-}
-
 - (void)viewDidUnload
-{   
-    [self setNumberState:nil];
-    rollButton = nil;
+{
     [self setModifier:nil];
     modifier = nil;
     diList = nil;
     [self setDiList:nil];
     modifier = nil;
     [self setSegmentLabel:nil];
+    [self setNumberState:nil];
     diceNumber = nil;
     [self setDiceNumber:nil];
     [self setDiceNumber:nil];
     [self setDiceNumber:nil];
-    [self setDiceOne:nil];
-    [self setDiceTwo:nil];
-    [self setRollButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
