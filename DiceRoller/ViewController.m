@@ -98,14 +98,6 @@
         return dice_.intValue - modInt_.intValue;
 }
 
--(int)diceNumberCounter:(NSInteger)number{
-    if (number == 0){
-        diceNo = 0;
-    } else if (number == 1){
-        diceNo = 1;
-    }
-    return diceNo;
-}
 
 - (void)viewDidUnload
 {

@@ -24,8 +24,6 @@
 
 -(IBAction)rollButton:(id)sender;
 
--(int)diceNumberCounter:(NSInteger)number;
-
 - (int)addInteger:(NSString *)modInt_ withInteger:(NSString*)title_ andInteger:(NSNumber *)dice_;
     
 @end
