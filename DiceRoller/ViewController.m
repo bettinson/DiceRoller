@@ -143,7 +143,11 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+	return YES;
+    } else {
+	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    }
 }
 
 @end
